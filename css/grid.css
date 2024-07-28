@@ -18,7 +18,6 @@
 
 
 body {
-
     background: var(--body_background);
     background-attachment: fixed;
 
@@ -29,12 +28,24 @@ body main {
     width: var(--main_width);
     max-width: var(--main_max-width);
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%);
     padding: 100px;
     background-color: var(--main_background-color);
+    animation-name: subir;
+    animation-duration: 0.85s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes subir {
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        top: 20%;
+    }
 }
 
 body main header {
@@ -64,7 +75,7 @@ body main header p {
 
 .section-content {
     display: grid;
-   
+
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
 }
@@ -78,15 +89,16 @@ section article {
     padding: 30px;
     background-color: rgb(212, 249, 249);
     position: relative;
-border: 2px solid transparent;
+    border: 2px solid transparent;
     transition: 0.5s;
 }
 
 section article:hover {
     border: 2px dotted rgba(0, 0, 0, 0.254);
-  transform: scale(1.02);
-  transition: 0.5s;
+    transform: scale(1.02);
+    transition: 0.5s;
 }
+
 section article .icon-span {
     display: flex;
     align-items: center;
