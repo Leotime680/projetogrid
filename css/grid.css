@@ -64,6 +64,7 @@ body main header h1 {
 }
 
 body main header p {
+    text-align: justify;
     margin-bottom: 12px;
     font-size: 17px;
     width: 100%;
@@ -126,6 +127,7 @@ section article .rolo h2 {
 }
 
 section article .rolo p {
+
     user-select: none;
     opacity: 0.7;
     font-size: 13px;
@@ -193,18 +195,36 @@ section .article-4 {
 
 
 
-@media (max-width:565px) {
 
-
-
-
+@media (max-width:820px) {
 
     body main {
+       border-radius: 20px 20px 0 0;
 
 
-        padding: 15px;
+
+    }
 
 
+
+    @keyframes subir {
+
+        0% {
+            top: 50%;
+        }
+    
+        100% {
+            top: 10%;
+        }
+    }
+
+    body main header h1 {
+
+        font-size: 30px;
+        width: 100%;
+        max-width: 450px;
+        line-height: 45px;
+        margin-bottom: 15px;
     }
 
     section article .rolo img {
@@ -223,8 +243,23 @@ section .article-4 {
         font-size: 13px;
         width: 100%;
         max-width: 500px;
+        text-align: justify;
         margin: 15px 0;
 
     }
+
+}
+
+@media (max-width:860px) {
+
+    body main {
+        position: absolute;
+        top: 5%;
+        padding: 15px;
+
+
+
+    }
+
 
 }
