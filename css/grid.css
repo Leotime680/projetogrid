@@ -210,7 +210,7 @@ section .article-4 {
     @keyframes subir {
 
         0% {
-            top: 50%;
+            top: 80%;
         }
     
         100% {
