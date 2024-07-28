@@ -253,7 +253,7 @@ section .article-4 {
 @media (max-width:860px) {
 
     body main {
-        position: absolute;
+        position: relative;
         top: 5%;
         padding: 15px;
 
