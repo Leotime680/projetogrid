@@ -18,15 +18,12 @@ function controller() {
 
         document.write(" Nao e  " + nome)
 
-    } else if (nome === "leonildo" ) {
+    } else if (nome === "leonildo") {
 
         document.write(" Bem vindo  " + nome)
-        document.write(" Estes sao os teus dados " + dados)
-        console.log(" Estes sao os teus dados " + dados.nome + dados.classe)
-        document.write(" Estes sao os teus dados " + dados.nome)
-
-
-    }
+        document.write(" Estes sao os teus dados ")
+        document.write(" nome: " + nome + " sala: " + dados.sala + " Curso: " + dados.curso
+ )}
 }
-
+//EXECUTAR CODIGO
 controller()
