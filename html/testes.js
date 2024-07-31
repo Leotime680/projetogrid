@@ -1,29 +1,19 @@
 //criacao das variaves
+var valorData = 15
 
-var nome = "leonildo"
-var dados = {
-    sala: 20,
-    classe: 2,
-    curso: "informatica",
-}
-dados.idade = 10
-console.log(dados)
 //extrututa condicional
 function controller() {
 
-    if ((nome === undefined)) {
+    if (valorData <= 6) {
+        document.write(" Postado Ha.... " + valorData + " Dias")
+    } else if (valorData <= 7) {
+        document.write("Postado Ha 1 semana")
 
-        document.write("ensira um nome valido")
-    } else if (!(nome === "leonildo")) {
-
-        document.write(" Nao e  " + nome)
-
-    } else if (nome === "leonildo") {
-
-        document.write(" Bem vindo  " + nome)
-        document.write(" Estes sao os teus dados ")
-        document.write(" nome: " + nome + " sala: " + dados.sala + " Curso: " + dados.curso
- )}
+    }else if (valorData <= 14) {
+        document.write("Postado Ha 2 semana")
+    }else if (valorData <= 31) {
+        document.write("Postado Ha 1 mes")
+    }
 }
 //EXECUTAR CODIGO
 controller()
